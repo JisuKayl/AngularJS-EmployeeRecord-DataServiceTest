@@ -1,0 +1,48 @@
+<h1 class="title">EMPLOYEE RECORDS</h1>
+<div class="body_wrap">
+<div class="form_wrap">
+    <form #frm = "ngForm" (ngSubmit)= "updateInfo(frm)">
+        <div class="textsub">
+            <input type="text" name="location" value="" ngModel>
+            <button type="submit" name="location">Add Info</button>
+        </div>
+    </form>
+</div>
+
+<div class="employee_wrap">
+    <div class="ewrap">
+    <button type="button" (click) = "getInfoFromService1()">Employee1</button>
+    <ul class="list-group">
+        <li *ngFor = "let info of infoReceived1" class="list-group-info"> {{info}}</li>
+    </ul>
+    </div>
+
+    <div class="ewrap">
+    <button type="button" (click) = "getInfoFromService2()">Employee2</button>
+    <ul class="list-group">
+        <li *ngFor = "let info of infoReceived2" class="list-group-info" >{{info}}</li>
+    </ul>
+    </div>
+
+    <div class="ewrap">
+    <button type="button" (click) = "getInfoFromService3()">Employee3</button>
+    <ul class="list-group">
+        <li *ngFor = "let info of infoReceived3" class="list-group-info" >{{info}}</li>
+    </ul>
+    </div>
+
+    <div class="ewrap">
+    <button type="button" (click) = "getInfoFromService4()">Employee4</button>
+    <ul class="list-group">
+        <li *ngFor = "let info of infoReceived4" class="list-group-info" >{{info}}</li>
+    </ul>
+</div>
+
+<div class="ewrap">
+    <button type="button" (click) = "getInfoFromService5()">Employee5</button>
+    <ul class="list-group">
+        <li *ngFor = "let info of infoReceived5" class="list-group-info" >{{info}}</li>
+    </ul>
+</div>
+</div>
+</div>
